@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { auth } from '../firebase'
 import Top from '../components/Top.vue'
-import SignUp from '../components/Signup.vue'
+import SignUp from '../components/SignUp.vue'
 import SignIn from '../components/SignIn.vue'
 
 const routes = [
@@ -24,7 +24,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes
 });
 
